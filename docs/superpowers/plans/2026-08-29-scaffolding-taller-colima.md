@@ -103,7 +103,7 @@ Todo el contenido de este taller está en español.
 - [ ] **Step 4: Verificar estructura**
 
 Run: `grep -c '^|' agenda.md`
-Expected: `11` (1 línea de encabezado + 1 separador + 9 filas de bloques)
+Expected: `12` (1 línea de encabezado + 1 separador + 10 filas de bloques, incluyendo los 2 descansos)
 
 Run: `grep -E 'requisitos/|ejercicios/|datos/|prompts/|slides/' README.md | wc -l`
 Expected: un número mayor a `0` (los enlaces a las carpetas están presentes)
