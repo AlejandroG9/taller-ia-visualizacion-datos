@@ -1,0 +1,57 @@
+\documentclass[light,minted=false]{cuzbeamer} % tema claro, sin resaltado de código
+
+\usepackage{graphicx}
+
+\title{Aplicación de Inteligencia Artificial Generativa en la Visualización de Datos}
+\subtitle{Con Python, Plotly y Dash}
+\author{Dr. Alejandro González Turrubiates}
+\institute{Universidad Autónoma de Tamaulipas}
+\date{2 al 4 de septiembre de 2026}
+\email{agturrubiates@uat.edu.mx}
+
+% Referencia textual del congreso donde se imparte el taller (el logo del
+% evento ya ocupa, en su lugar, la esquina superior derecha de cada slide:
+% ver images/logo_SIP_UAT-trimmed.png y images/logo_SIP_UAT-negro.png).
+\AtBeginDocument{%
+    \addtobeamertemplate{title page}{}{%
+        \begin{tikzpicture}[remember picture,overlay]
+            \node[anchor=south west,xshift=0.3cm,yshift=0.35cm,align=left,font=\tiny,text=white]
+                at (current page.south west)
+                {En el marco del Congreso Internacional CIREDII 2026 --- Colima};
+        \end{tikzpicture}%
+    }%
+}
+
+\begin{document}
+    \maketitle
+
+    \begin{frame}{Objetivos del taller}
+        \begin{itemize}
+            \item Formular prompts efectivos para generar visualizaciones
+            \item Generar y ajustar gráficas a partir de datos reales
+            \item \textbf{Verificar} los resultados generados por IA
+            \item Aplicar buenas prácticas de uso responsable de la IA
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Agenda del día (9:00--14:00)}
+        \begin{enumerate}
+            \item Fundamentos de prompting
+            \item Plotly guiado
+            \item Práctica libre
+            \item De Plotly a Dash
+            \item Buenas prácticas y cierre
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}{Antes de empezar}
+        Verifica que tienes instalado:
+        \begin{itemize}
+            \item Python 3.11+
+            \item Una CLI agentic (Gemini CLI o Claude Code)
+        \end{itemize}
+
+        \vspace{1em}
+        Ver \texttt{requisitos/} si algo falta.
+    \end{frame}
+\end{document}

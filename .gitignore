@@ -6,3 +6,16 @@ venv/
 node_modules/
 .DS_Store
 *.pdf
+
+# Artefactos de compilación LaTeX
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+missfont.log
