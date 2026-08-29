@@ -10,11 +10,11 @@ se necesitan **dos pasadas** para que los logos (posicionados con TikZ
 `remember picture, overlay`) queden bien ubicados:
 
 ```
-xelatex -interaction=nonstopmode bienvenida.tex
-xelatex -interaction=nonstopmode bienvenida.tex
+xelatex -interaction=nonstopmode taller.tex
+xelatex -interaction=nonstopmode taller.tex
 ```
 
-Esto genera `bienvenida.pdf` (no se versiona en git, ver `.gitignore`).
+Esto genera `taller.pdf` (no se versiona en git, ver `.gitignore`).
 
 ### Requisitos del sistema
 
@@ -28,7 +28,8 @@ documento no usa ningún carácter CJK.
 
 ## Archivos
 
-- `bienvenida.tex` — el documento fuente (portada + 3 slides)
+- `taller.tex` — el documento fuente completo (26 slides: bienvenida, los 5
+  bloques de la agenda con sus divisores de sección, descansos y cierre)
 - `cuzbeamer.cls` — copia local de la clase Beamer del ponente (ver nota abajo)
 - `tikz-uml.sty` — dependencia de la clase
 - `images/` — logos UAT, CIREDII 2026, y assets de la clase
@@ -46,8 +47,9 @@ no un symlink ni una copia idéntica. Cambios respecto al original:
    ver `images/ciredii2026-logo.svg` como fuente original). Se mantienen esos
    nombres de archivo porque la clase los referencia directamente.
 2. **Altura del logo del evento ajustada** para que coincida con la del logo UAT
-   (antes era más pequeño) — ver los `\includegraphics[height=...]` en las
-   secciones "Logos on the frametitle bar" y el logo de la portada.
+   (antes era más pequeño) en los tres lugares donde aparece: la barra de las
+   slides de contenido ("Logos on the frametitle bar"), la portada, y los
+   divisores de sección ("Logos on section-title slides").
 3. **Separación entre logos aumentada** en la barra superior de las slides de
    contenido (`xshift=-3.5cm` en vez de `-2.5cm` del original).
 

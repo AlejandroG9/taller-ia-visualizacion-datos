@@ -98,9 +98,9 @@
             \node[anchor=north west,xshift=0.3cm,yshift=-0.05cm]
                 at (current page.north west)
                 {\includegraphics[width=0.18\textwidth]{UAT-Horizontal-blanco}};
-            \node[anchor=north east,xshift=-0.3cm,yshift=\dimexpr-0.05cm-0.012\textwidth\relax]
+            \node[anchor=north east,xshift=-0.3cm,yshift=-0.05cm]
                 at (current page.north east)
-                {\includegraphics[height=0.0271\textwidth]{logo_SIP_UAT-blanco}};
+                {\includegraphics[height=0.03915\textwidth]{logo_SIP_UAT-blanco}};
         \end{tikzpicture}%
     \fi
 }%

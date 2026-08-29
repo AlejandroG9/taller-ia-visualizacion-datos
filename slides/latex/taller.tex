@@ -1,0 +1,242 @@
+\documentclass[light,minted=false]{cuzbeamer} % tema claro, sin resaltado de código
+
+\usepackage{graphicx}
+
+\title{Aplicación de Inteligencia Artificial Generativa en la Visualización de Datos}
+\subtitle{Con Python, Plotly y Dash}
+\author{Dr. Alejandro González Turrubiates}
+\institute{Universidad Autónoma de Tamaulipas}
+\date{2 al 4 de septiembre de 2026}
+\email{agturrubiates@uat.edu.mx}
+
+% Referencia textual del congreso donde se imparte el taller (el logo del
+% evento ya ocupa, en su lugar, la esquina superior derecha de cada slide:
+% ver images/logo_SIP_UAT-trimmed.png y images/logo_SIP_UAT-negro.png).
+\AtBeginDocument{%
+    \addtobeamertemplate{title page}{}{%
+        \begin{tikzpicture}[remember picture,overlay]
+            \node[anchor=south west,xshift=0.3cm,yshift=0.35cm,align=left,font=\tiny,text=white]
+                at (current page.south west)
+                {En el marco del Congreso Internacional CIREDII 2026 --- Colima};
+        \end{tikzpicture}%
+    }%
+}
+
+\begin{document}
+    \maketitle
+
+    \begin{frame}{Objetivos del taller}
+        \begin{itemize}
+            \item Formular prompts efectivos para generar visualizaciones
+            \item Generar y ajustar gráficas a partir de datos reales
+            \item \textbf{Verificar} los resultados generados por IA
+            \item Aplicar buenas prácticas de uso responsable de la IA
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Agenda del día (9:00--14:00)}
+        \begin{enumerate}
+            \item Fundamentos de prompting
+            \item Plotly guiado
+            \item Práctica libre
+            \item De Plotly a Dash
+            \item Buenas prácticas y cierre
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}{Antes de empezar}
+        Verifica que tienes instalado:
+        \begin{itemize}
+            \item Python 3.11+
+            \item Una CLI agentic (Gemini CLI o Claude Code)
+        \end{itemize}
+
+        \vspace{1em}
+        Ver \texttt{requisitos/} si algo falta.
+    \end{frame}
+
+    % =========================================================
+    % BLOQUE 1 — Fundamentos de prompting (9:20--9:50)
+    % =========================================================
+    \section{Fundamentos de prompting}
+
+    \begin{frame}{¿Qué es un agente de IA en terminal?}
+        Un programa que corre en tu terminal y puede:
+        \begin{itemize}
+            \item \textbf{Leer} tu instrucción en lenguaje natural
+            \item \textbf{Escribir} código Python por ti
+            \item \textbf{Ejecutarlo} y mostrarte el resultado
+            \item \textbf{Corregirlo} si algo sale mal, si se lo pides
+        \end{itemize}
+
+        \vspace{1em}
+        Tú nunca escribes el código directamente — lo pides, lo revisas y lo verificas.
+    \end{frame}
+
+    \begin{frame}{El patrón de trabajo}
+        \begin{enumerate}
+            \item \textbf{Prompt} — describes qué gráfica necesitas y con qué datos
+            \item \textbf{Código} — la IA escribe un script Python
+            \item \textbf{Gráfica} — el script corre y produce un resultado visual
+            \item \textbf{Verificación} — revisas que el resultado sea correcto
+        \end{enumerate}
+
+        \vspace{1em}
+        Este ciclo se repite las veces que haga falta, ajustando el prompt.
+    \end{frame}
+
+    \begin{frame}{Cómo pedir un buen prompt}
+        \begin{itemize}
+            \item Sé específico: qué tipo de gráfica, con qué columnas, de qué archivo
+            \item Pide un paso a la vez, no una app completa de un jalón
+            \item Pide que te explique en una oración qué hizo, antes de correrlo
+            \item Si algo está mal, describe \textbf{qué} está mal — no pidas "hazlo de nuevo"
+        \end{itemize}
+    \end{frame}
+
+    % =========================================================
+    % Checkpoint de instalación (9:50--10:00)
+    % =========================================================
+    \begin{frame}{Checkpoint de instalación}
+        Antes de la práctica, confirma que tienes:
+        \begin{itemize}
+            \item Python 3.11+ funcionando (\texttt{python --version})
+            \item Tu CLI agentic autenticada y respondiendo
+        \end{itemize}
+
+        \vspace{1em}
+        Guías completas en \texttt{requisitos/} si necesitas resolver algo ahora.
+    \end{frame}
+
+    % =========================================================
+    % BLOQUE 2 — Plotly guiado (10:00--11:00)
+    % =========================================================
+    \section{Plotly guiado}
+
+    \begin{frame}{Objetivo del bloque}
+        Generar tus primeras gráficas con Plotly, guiado paso a paso, usando
+        datos abiertos reales.
+
+        \vspace{1em}
+        \textbf{Tú} rediges los prompts. \textbf{La IA} escribe y corre el código.
+        \textbf{Ambos} verifican el resultado.
+    \end{frame}
+
+    \begin{frame}{Qué vamos a construir}
+        \begin{itemize}
+            \item Gráfica de \textbf{barras} — comparar categorías
+            \item Gráfica de \textbf{líneas} — ver una tendencia en el tiempo
+            \item \textbf{Mapa} — ver un dato distribuido geográficamente
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{De dónde salen los datos}
+        Vamos a trabajar con \textbf{datos abiertos} (INEGI y fuentes públicas de
+        México) — datos reales, no de ejemplo.
+
+        \vspace{1em}
+        Ver \texttt{datos/} para las fuentes y los archivos específicos de este bloque.
+    \end{frame}
+
+    % =========================================================
+    % Descanso (11:00--11:15)
+    % =========================================================
+    \begin{standout}[Descanso]
+        11:00 -- 11:15
+    \end{standout}
+
+    % =========================================================
+    % BLOQUE 3 — Práctica libre (11:15--12:15)
+    % =========================================================
+    \section{Práctica libre}
+
+    \begin{frame}{Instrucciones}
+        \begin{enumerate}
+            \item Elige una pregunta sobre los datos disponibles en \texttt{datos/}
+            \item Pídele a tu CLI agentic una gráfica que la responda
+            \item Ajusta el prompt hasta que el resultado te convenza
+            \item Verifica antes de darlo por bueno
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}{Checklist de verificación}
+        Antes de dar por buena una gráfica generada por IA, revisa:
+        \begin{itemize}
+            \item ¿Los ejes muestran lo que dicen mostrar (unidades, escala)?
+            \item ¿Los números coinciden con lo que esperarías del dataset?
+            \item ¿La IA usó el archivo real, o inventó valores de ejemplo?
+        \end{itemize}
+    \end{frame}
+
+    % =========================================================
+    % Descanso corto (12:15--12:30)
+    % =========================================================
+    \begin{standout}[Descanso corto]
+        12:15 -- 12:30
+    \end{standout}
+
+    % =========================================================
+    % BLOQUE 4 — De Plotly a Dash (12:30--13:30)
+    % =========================================================
+    \section{De Plotly a Dash}
+
+    \begin{frame}{¿Qué es Dash?}
+        Un framework de Python que sirve tus gráficas de Plotly como una
+        \textbf{aplicación web interactiva}, corriendo en un puerto local
+        (\texttt{localhost}).
+
+        \vspace{1em}
+        Plotly genera la gráfica; Dash la convierte en dashboard.
+    \end{frame}
+
+    \begin{frame}{Qué vamos a construir}
+        Un dashboard que reúne las gráficas de los bloques anteriores en una
+        sola página, con al menos un control interactivo (por ejemplo, un
+        filtro) que actualiza la gráfica.
+    \end{frame}
+
+    \begin{frame}{Cómo lo vamos a hacer}
+        \begin{enumerate}
+            \item Partimos del código Plotly que ya generamos
+            \item Le pedimos a la IA que lo integre en una app Dash
+            \item Corremos la app y la abrimos en el navegador (\texttt{localhost})
+            \item Verificamos que el control interactivo funcione
+        \end{enumerate}
+    \end{frame}
+
+    % =========================================================
+    % BLOQUE 5 — Buenas prácticas y cierre (13:30--14:00)
+    % =========================================================
+    \section{Buenas prácticas y cierre}
+
+    \begin{frame}{Buenas prácticas de uso responsable}
+        \begin{itemize}
+            \item Verifica siempre — la IA puede inventar datos con total confianza
+            \item No compartas datos sensibles o confidenciales con herramientas de IA
+            \item Documenta qué prompts usaste para poder reproducir tu trabajo
+            \item La IA acelera el trabajo técnico, no reemplaza tu criterio
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{¿Cuándo desconfiar de un resultado?}
+        \begin{itemize}
+            \item Los números son "demasiado perfectos" o redondos
+            \item La gráfica no cambia aunque cambies el dataset de entrada
+            \item La IA no puede explicar de dónde salió un valor específico
+            \item El resultado contradice algo que ya sabes del tema
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Cierre}
+        \textbf{Gracias por participar.}
+
+        \vspace{1em}
+        Todo el material de este taller está disponible en:
+        \begin{itemize}
+            \item \url{https://github.com/AlejandroG9/taller-ia-visualizacion-datos}
+        \end{itemize}
+
+        \vspace{1em}
+        \textit{agturrubiates@uat.edu.mx}
+    \end{frame}
+\end{document}
