@@ -28,7 +28,7 @@ documento no usa ningún carácter CJK.
 
 ## Archivos
 
-- `taller.tex` — el documento fuente completo (34 slides: bienvenida, los 5
+- `taller.tex` — el documento fuente completo (35 slides: bienvenida, los 5
   bloques de la agenda con sus divisores de sección, descansos y cierre)
 - `cuzbeamer.cls` — copia local de la clase Beamer del ponente (ver nota abajo)
 - `tikz-uml.sty` — dependencia de la clase

@@ -229,24 +229,37 @@
     \section{Fundamentos de prompting}
 
     \begin{frame}{El patrón de trabajo}
-        \begin{enumerate}
-            \item \textbf{Prompt} — describes qué gráfica necesitas y con qué datos
-            \item \textbf{Código} — la IA escribe un script Python
-            \item \textbf{Gráfica} — el script corre y produce un resultado visual
-            \item \textbf{Verificación} — revisas que el resultado sea correcto
-        \end{enumerate}
+        \begin{center}
+        \begin{tikzpicture}[
+            box/.style={draw=white, thick, rounded corners, minimum width=2.1cm, minimum height=1.4cm, align=center, text=white, font=\small, inner sep=2pt},
+            arr/.style={->, thick, white}
+        ]
+            \node[box] (prompt) {\textbf{Prompt}\\[2pt]{\tiny qué necesitas}};
+            \node[box, right=0.9cm of prompt] (codigo) {\textbf{Código}\\[2pt]{\tiny la IA escribe}};
+            \node[box, right=0.9cm of codigo] (grafica) {\textbf{Gráfica}\\[2pt]{\tiny corre y produce}};
+            \node[box, right=0.9cm of grafica] (verif) {\textbf{Verificación}\\[2pt]{\tiny tú revisas}};
 
-        \vspace{1em}
-        Este ciclo se repite las veces que haga falta, ajustando el prompt.
+            \draw[arr] (prompt) -- (codigo);
+            \draw[arr] (codigo) -- (grafica);
+            \draw[arr] (grafica) -- (verif);
+            \draw[arr] (verif.south) to[out=-65,in=-115]
+                node[below,font=\tiny,text=white,pos=0.5,yshift=-0.35cm]{ajusta el prompt y repite}
+                (prompt.south);
+        \end{tikzpicture}
+        \end{center}
     \end{frame}
 
     \begin{frame}{Cómo pedir un buen prompt}
-        \begin{itemize}
-            \item Sé específico: qué tipo de gráfica, con qué columnas, de qué archivo
-            \item Pide un paso a la vez, no una app completa de un jalón
-            \item Pide que te explique en una oración qué hizo, antes de correrlo
-            \item Si algo está mal, describe \textbf{qué} está mal — no pidas "hazlo de nuevo"
-        \end{itemize}
+        \begin{center}
+        \begin{tikzpicture}[
+            card/.style={draw=white, thick, rounded corners, text width=5.1cm, align=left, text=white, font=\small, inner sep=8pt}
+        ]
+            \node[card] (c1) {\textbf{Sé específico}\\[3pt] Qué tipo de gráfica, con qué columnas, de qué archivo};
+            \node[card, right=0.4cm of c1] (c2) {\textbf{Un paso a la vez}\\[3pt] No pidas una app completa de un jalón};
+            \node[card, below=0.4cm of c1] (c3) {\textbf{Pide una explicación}\\[3pt] Que te diga en una oración qué hizo, antes de correrlo};
+            \node[card, below=0.4cm of c2] (c4) {\textbf{Sé concreto al corregir}\\[3pt] Describe \textbf{qué} está mal — no digas "hazlo de nuevo"};
+        \end{tikzpicture}
+        \end{center}
     \end{frame}
 
     % =========================================================
@@ -285,12 +298,31 @@
         \end{itemize}
     \end{frame}
 
-    \begin{frame}{De dónde salen los datos}
-        Vamos a trabajar con \textbf{datos abiertos} (INEGI y fuentes públicas de
-        México) — datos reales, no de ejemplo.
+    \begin{frame}{¿Dónde voy a ver la gráfica?}
+        \begin{itemize}
+            \item \textbf{Se abre sola} — si el script usa \texttt{fig.show()}, aparece en tu navegador automáticamente
+            \item \textbf{Se guarda como HTML} — \texttt{fig.write\_html(...)}, la abres con doble clic (sigue siendo interactiva)
+            \item \textbf{Se guarda como imagen} — \texttt{fig.write\_image(...)}, ya no es interactiva
+        \end{itemize}
 
-        \vspace{1em}
-        Ver \texttt{datos/} para las fuentes y los archivos específicos de este bloque.
+        \vspace{0.8em}
+        Si el script corre y no ves nada, pide: \textit{“ábrela en el navegador”}.
+    \end{frame}
+
+    \begin{frame}{De dónde salen los datos}
+        Vamos a trabajar con \textbf{datos abiertos del INEGI} (Censo de
+        Población y Vivienda 2020) — datos reales, no de ejemplo:
+        \begin{itemize}
+            \item \texttt{poblacion\_por\_estado.csv} — para barras y mapa
+            \item \texttt{poblacion\_mexico\_historica.csv} — para líneas
+        \end{itemize}
+
+        \vspace{0.6em}
+        \begin{center}
+        \href{https://github.com/AlejandroG9/taller-ia-visualizacion-datos/tree/main/datos}{\includegraphics[width=2.2cm]{images/qr/qr-datos.png}}
+        \\[0.3em]
+        \href{https://github.com/AlejandroG9/taller-ia-visualizacion-datos/tree/main/datos}{\texttt{.../taller-ia-visualizacion-datos/datos}}
+        \end{center}
     \end{frame}
 
     % =========================================================

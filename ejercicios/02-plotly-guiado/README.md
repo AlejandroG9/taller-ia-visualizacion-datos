@@ -6,7 +6,10 @@ Generar gráficas con Plotly (barras, líneas, mapas) a partir de datos abiertos
 
 ## Dataset
 
-Ver [`datos/`](../../datos/) — pendiente de selección final.
+Ver [`datos/`](../../datos/) — población de México (INEGI, Censo 2020):
+
+- `poblacion_por_estado.csv` para barras y mapa
+- `poblacion_mexico_historica.csv` para líneas
 
 ## Estado
 
