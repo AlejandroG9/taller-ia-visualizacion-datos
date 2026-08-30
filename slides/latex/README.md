@@ -28,7 +28,7 @@ documento no usa ningún carácter CJK.
 
 ## Archivos
 
-- `taller.tex` — el documento fuente completo (33 slides: bienvenida, los 5
+- `taller.tex` — el documento fuente completo (35 slides: bienvenida, los 5
   bloques de la agenda con sus divisores de sección, descansos y cierre)
 - `cuzbeamer.cls` — copia local de la clase Beamer del ponente (ver nota abajo)
 - `tikz-uml.sty` — dependencia de la clase
@@ -96,6 +96,26 @@ URLs de descarga usadas en los QR de esta slide:
 | Antigravity IDE | https://antigravity.google/download |
 | Claude (app) | https://claude.com/download |
 | ChatGPT (app) | https://openai.com/chatgpt/download/ |
+
+## Nota sobre los logos de la slide "¿Dónde se guardan los datos?"
+
+- `logo-googlesheets.png`: ícono de Google Sheets, de
+  [Simple Icons](https://simpleicons.org/) (CC0).
+- `logo-archivos.png`, `logo-database.png`: **no representan marcas.**
+  Son glifos genéricos (documento con esquina doblada; cilindros
+  apilados) dibujados a mano — la fila de "Archivos locales" cubre dos
+  formatos (CSV y Excel) y no hay un logo de Excel con licencia libre
+  que se vea limpio recoloreado a blanco (su versión actual usa
+  degradados); "Bases de datos" es intencionalmente genérico (SQL en
+  general, no un motor específico).
+
+## Nota sobre `example-dash.png`
+
+Captura de pantalla real de una mini app Dash construida solo para esta
+demo (datos sintéticos de población por estado, con un dropdown que
+filtra la gráfica) — corrida localmente y capturada con el navegador, no
+es un mockup. El código de la demo no se guarda en el repo, solo la
+captura. Usada en la slide "¿Qué es Dash?" del Bloque 4.
 
 ## Nota sobre los códigos QR (`qr/qr-*.png`)
 

@@ -136,6 +136,11 @@
         \end{center}
     \end{frame}
 
+    \begin{standout}[Recapitulando]
+        \strut{\Huge\textbf{Agent = Model + Harness}}\\[1em]
+        {\large El modelo piensa. El harness actúa. El entorno es solo dónde lo ves.}
+    \end{standout}
+
     \begin{frame}{¿Qué es Python?}
         \begin{itemize}
             \item Un lenguaje de programación muy usado para análisis de datos
@@ -151,17 +156,35 @@
         \end{center}
     \end{frame}
 
+    \begin{frame}{¿Qué es Plotly?}
+        Una librería de Python para crear \textbf{gráficas interactivas}
+        (barras, líneas, mapas...) — lo que vamos a usar en el Bloque 2.
+
+        \vspace{0.6em}
+        Puedes pasar el mouse sobre una gráfica de Plotly y ver el valor
+        exacto de cada punto, hacer zoom, o filtrar la leyenda con un clic.
+
+        \vspace{0.6em}
+        \begin{center}
+        \href{https://plotly.com/python/}{\includegraphics[width=2.2cm]{images/qr/qr-plotly.png}}
+        \\[0.3em]
+        \href{https://plotly.com/python/}{\texttt{plotly.com/python}} — catálogo completo de gráficas
+        \end{center}
+    \end{frame}
+
     \begin{frame}{¿Qué es Dash?}
         Un framework de Python que convierte gráficas en \textbf{aplicaciones
         web interactivas} — lo veremos a fondo en el Bloque 4.
     \end{frame}
 
     \begin{frame}{¿Dónde se guardan los datos?}
-        \begin{itemize}
-            \item \textbf{Archivos locales} — CSV, Excel (lo que usaremos hoy)
-            \item \textbf{Hojas de cálculo en la nube} — Google Sheets
-            \item \textbf{Bases de datos} — SQL, servicios en la nube
-        \end{itemize}
+        \begin{center}
+        \begin{tabular}{cl}
+            \makebox[1.2cm][c]{\includegraphics[height=0.55cm]{images/logo-archivos.png}} & \textbf{Archivos locales} — CSV, Excel (lo que usaremos hoy) \\[0.8em]
+            \makebox[1.2cm][c]{\includegraphics[height=0.55cm]{images/logo-googlesheets.png}} & \textbf{Hojas de cálculo en la nube} — Google Sheets \\[0.8em]
+            \makebox[1.2cm][c]{\includegraphics[height=0.55cm]{images/logo-database.png}} & \textbf{Bases de datos} — SQL, servicios en la nube \\
+        \end{tabular}
+        \end{center}
     \end{frame}
 
     \begin{frame}{Tip: Google AI Plus gratis para estudiantes}
@@ -321,10 +344,14 @@
     \begin{frame}{¿Qué es Dash?}
         Un framework de Python que sirve tus gráficas de Plotly como una
         \textbf{aplicación web interactiva}, corriendo en un puerto local
-        (\texttt{localhost}).
+        (\texttt{localhost}). Plotly genera la gráfica; Dash la convierte en
+        dashboard.
 
-        \vspace{1em}
-        Plotly genera la gráfica; Dash la convierte en dashboard.
+        \vspace{0.6em}
+        \begin{center}
+            \includegraphics[width=9.5cm]{images/example-dash.png}
+        \end{center}
+        {\tiny\textit{Ejemplo real: dashboard con filtro interactivo, generado para esta demo.}}
     \end{frame}
 
     \begin{frame}{Qué vamos a construir}
