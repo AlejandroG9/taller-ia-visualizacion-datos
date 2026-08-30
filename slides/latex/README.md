@@ -28,11 +28,27 @@ documento no usa ningún carácter CJK.
 
 ## Archivos
 
-- `taller.tex` — el documento fuente completo (26 slides: bienvenida, los 5
+- `taller.tex` — el documento fuente completo (31 slides: bienvenida, los 5
   bloques de la agenda con sus divisores de sección, descansos y cierre)
 - `cuzbeamer.cls` — copia local de la clase Beamer del ponente (ver nota abajo)
 - `tikz-uml.sty` — dependencia de la clase
-- `images/` — logos UAT, CIREDII 2026, y assets de la clase
+- `images/` — logos UAT, CIREDII 2026, logos de modelos de IA (ver nota abajo)
+  y assets de la clase
+
+## Nota sobre los logos de modelos de IA (`logo-*.png`)
+
+Usados en la slide "¿Qué es un modelo de lenguaje (LLM)?" para identificar
+cada marca. Recoloreados a blanco (el original es una silueta monocromática)
+para que se vean sobre el fondo oscuro del tema; sin más cambios de forma.
+
+- `logo-claude.png`, `logo-gemini.png`, `logo-deepseek.png`, `logo-qwen.png`:
+  tomados de [Simple Icons](https://simpleicons.org/) (licencia CC0).
+- `logo-gpt.png`: extraído del símbolo (sin el wordmark) de
+  [`OpenAI logo 2025.svg`](https://commons.wikimedia.org/wiki/File:OpenAI_logo_2025.svg)
+  en Wikimedia Commons — marcado ahí como de dominio público por ser
+  demasiado simple para derechos de autor, aunque sigue siendo una marca
+  registrada de OpenAI. No está en Simple Icons: el ícono de OpenAI fue
+  retirado de ese repositorio por una disputa de marca.
 
 ## Nota sobre `cuzbeamer.cls`
 
