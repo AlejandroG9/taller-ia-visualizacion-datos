@@ -61,6 +61,14 @@
         \end{center}
     \end{frame}
 
+    \newcommand{\terminalmarker}[1]{%
+        \begin{standout}[Manos a la obra]
+            \strut\includegraphics[height=1.4cm]{images/logo-terminal-black.png}\\[0.5em]
+            {\Large\textbf{A la terminal}}\\[0.5em]
+            {\small #1}
+        \end{standout}
+    }
+
     \newcommand{\harnesscard}[3]{%
         \href{#3}{%
         \begin{minipage}[t]{2.6cm}\centering
@@ -262,6 +270,8 @@
         \end{center}
     \end{frame}
 
+    \terminalmarker{El instructor hace la demo en vivo — guion en \texttt{ejercicios/01-fundamentos/}}
+
     % =========================================================
     % Checkpoint de instalación (9:50--10:00)
     % =========================================================
@@ -325,6 +335,8 @@
         \end{center}
     \end{frame}
 
+    \terminalmarker{Sigue los 3 pasos guiados (barras, líneas, mapa) en \texttt{ejercicios/02-plotly-guiado/}}
+
     % =========================================================
     % Descanso (11:00--11:15)
     % =========================================================
@@ -354,6 +366,8 @@
             \item ¿La IA usó el archivo real, o inventó valores de ejemplo?
         \end{itemize}
     \end{frame}
+
+    \terminalmarker{Elige tu pregunta y trabájala — ideas en \texttt{ejercicios/03-practica-libre/}}
 
     % =========================================================
     % Descanso corto (12:15--12:30)
@@ -394,6 +408,8 @@
             \item Verificamos que el control interactivo funcione
         \end{enumerate}
     \end{frame}
+
+    \terminalmarker{Arma tu dashboard con los prompts en \texttt{ejercicios/04-dash/}}
 
     % =========================================================
     % BLOQUE 5 — Buenas prácticas y cierre (13:30--14:00)

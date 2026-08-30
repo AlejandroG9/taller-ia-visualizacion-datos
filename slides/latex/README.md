@@ -28,7 +28,7 @@ documento no usa ningún carácter CJK.
 
 ## Archivos
 
-- `taller.tex` — el documento fuente completo (35 slides: bienvenida, los 5
+- `taller.tex` — el documento fuente completo (39 slides: bienvenida, los 5
   bloques de la agenda con sus divisores de sección, descansos y cierre)
 - `cuzbeamer.cls` — copia local de la clase Beamer del ponente (ver nota abajo)
 - `tikz-uml.sty` — dependencia de la clase
@@ -86,6 +86,13 @@ tratamiento (recoloreados a blanco).
   de Microsoft (no está en Simple Icons).
 - `logo-gpt.png`, `logo-warp.png`, `logo-antigravity.png`: reutilizados de
   las slides anteriores.
+
+## Nota sobre `logo-terminal-black.png`
+
+Versión en negro (no blanca) del mismo ícono genérico de terminal que
+`logo-terminal.png` — se usa en las 4 slides "Manos a la obra" (comando
+`\terminalmarker`), que corren sobre el frame `[standout]` con fondo
+claro; ahí el ícono blanco sería invisible.
 
 URLs de descarga usadas en los QR de esta slide:
 
