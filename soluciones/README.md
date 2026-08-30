@@ -10,6 +10,16 @@ Si la IA falla en vivo (error de red, resultado incorrecto, se acaba el tiempo),
 
 No se comparte con los participantes al inicio del bloque — solo como red de seguridad si alguien se atora y ya se agotó el tiempo de resolverlo con IA.
 
-## Estado
+## Contenido
 
-Los scripts de referencia para cada bloque (`01-fundamentos`, `02-plotly-guiado`, `03-practica-libre`, `04-dash`) se agregan en una fase posterior, una vez definido el contenido detallado de cada ejercicio.
+- `01-fundamentos/barras_top5.py` — los 5 estados más poblados
+- `02-plotly-guiado/barras.py`, `lineas.py`, `mapa.py` — los tres pasos guiados
+- `03-practica-libre/ejemplo_crecimiento_1990_2020.py` — un ejemplo de referencia (el bloque es abierto por diseño, no hay "la" respuesta correcta)
+- `04-dash/app.py` — el dashboard con el slider de población mínima
+
+Todos corren desde la raíz del repo (usan rutas relativas como `datos/poblacion_por_estado.csv`), con `pip install plotly dash pandas` (ver [`requisitos/python.md`](../requisitos/python.md)):
+
+```
+python soluciones/01-fundamentos/barras_top5.py
+python soluciones/04-dash/app.py   # abre http://127.0.0.1:8050
+```
