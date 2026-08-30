@@ -13,7 +13,7 @@ Taller práctico para crear visualizaciones y dashboards interactivos con Python
 Instala y verifica lo siguiente siguiendo las guías en [`requisitos/`](requisitos/):
 
 1. [Python](requisitos/python.md)
-2. Al menos una herramienta agentic de terminal: [Gemini CLI](requisitos/gemini-cli.md) o [Claude Code](requisitos/claude-code.md)
+2. Al menos una herramienta agentic de terminal: [Antigravity CLI](requisitos/antigravity-cli.md) o [Claude Code](requisitos/claude-code.md)
 
 ## Estructura del repositorio
 

@@ -50,6 +50,45 @@ para que se vean sobre el fondo oscuro del tema; sin más cambios de forma.
   registrada de OpenAI. No está en Simple Icons: el ícono de OpenAI fue
   retirado de ese repositorio por una disputa de marca.
 
+## Nota sobre los logos de harnesses/CLIs agentic (`logo-*.png`)
+
+Usados en la slide "¿Qué es un 'harness' o CLI agentic?", con el mismo
+tratamiento (recoloreados a blanco).
+
+- `logo-claude-code.png`, `logo-cursor.png`, `logo-copilot.png`,
+  `logo-opencode.png`, `logo-warp.png`: tomados de
+  [Simple Icons](https://simpleicons.org/) (licencia CC0).
+- `logo-antigravity.png`: extraído del símbolo (sin el wordmark) de
+  [`Google Antigravity Logo.svg`](https://commons.wikimedia.org/wiki/File:Google_Antigravity_Logo.svg)
+  en Wikimedia Commons — mismo criterio de dominio público por simplicidad
+  que el logo de OpenAI (ver nota arriba); también marca registrada
+  (de Google).
+- `logo-codex.png`: reutiliza `logo-gpt.png` (el símbolo de OpenAI) — Codex
+  CLI es un producto de OpenAI y no tiene un ícono propio disponible en
+  ninguna de las dos fuentes anteriores.
+- `logo-commandcode.png`: **no es el logo real de la marca.** Command Code
+  es un producto comercial (2026) sin logo de licencia libre disponible en
+  ninguna de las fuentes anteriores; se usa en su lugar un ícono genérico
+  de terminal (dibujado a mano, sin dueño) solo para no dejar la fila vacía.
+
+## Nota sobre los códigos QR (`qr/qr-*.png`)
+
+Cada tarjeta de la slide de harnesses incluye un QR generado localmente
+(librería `qrcode` de Python) que apunta a la página oficial del producto,
+y el logo/nombre de cada tarjeta también es un enlace clickeable dentro
+del PDF (usa `\href`, vía `hyperref` — ya lo trae Beamer). URLs usadas:
+
+| Herramienta | URL |
+|---|---|
+| Claude Code | https://claude.com/product/claude-code |
+| Antigravity CLI | https://antigravity.google/product/antigravity-cli/ |
+| Codex CLI | https://chatgpt.com/codex |
+| Cursor | https://cursor.com/ |
+| GitHub Copilot | https://github.com/features/copilot |
+| OpenCode | https://opencode.ai/ |
+| Command Code | https://commandcode.ai/ |
+| Warp Agent CLI | https://www.warp.dev/agent-cli |
+
 ## Nota sobre `cuzbeamer.cls`
 
 Esta es una copia **modificada** de la clase original (`Curso_PMI/cuzbeamer__1_/cuzbeamer.cls`),

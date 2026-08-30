@@ -61,13 +61,37 @@
         \end{center}
     \end{frame}
 
+    \newcommand{\harnesscard}[3]{%
+        \href{#3}{%
+        \begin{minipage}[t]{2.6cm}\centering
+            \includegraphics[height=0.32cm]{images/logo-#1.png}\\[0.15em]
+            {\tiny\textbf{#2}}\\[0.2em]
+            \includegraphics[width=1.5cm]{images/qr/qr-#1.png}
+        \end{minipage}}%
+    }
+
     \begin{frame}{¿Qué es un “harness” o CLI agentic?}
-        El programa que conecta un modelo de lenguaje con tu computadora,
-        para que pueda leer, escribir y ejecutar código por ti.
-        \begin{itemize}
-            \item \textbf{Claude Code}, \textbf{Gemini CLI} — los que usaremos hoy
-            \item Existen otros (Cursor, GitHub Copilot, entre otros)
-        \end{itemize}
+        \footnotesize El programa que conecta un modelo de lenguaje con tu
+        computadora, para que pueda leer, escribir y ejecutar código por ti
+        — cada QR lleva a la página oficial.
+
+        \vspace{0.5em}
+        \begin{center}
+        \begin{tabular}{cccc}
+            \harnesscard{claude-code}{Claude Code}{https://claude.com/product/claude-code} &
+            \harnesscard{antigravity}{Antigravity CLI}{https://antigravity.google/product/antigravity-cli/} &
+            \harnesscard{codex}{Codex CLI}{https://chatgpt.com/codex} &
+            \harnesscard{cursor}{Cursor}{https://cursor.com/} \\
+            \noalign{\vspace{1.4em}}
+            \harnesscard{copilot}{GitHub Copilot}{https://github.com/features/copilot} &
+            \harnesscard{opencode}{OpenCode}{https://opencode.ai/} &
+            \harnesscard{commandcode}{Command Code}{https://commandcode.ai/} &
+            \harnesscard{warp}{Warp Agent CLI}{https://www.warp.dev/agent-cli} \\
+        \end{tabular}
+        \end{center}
+
+        \vspace{0.4em}
+        \footnotesize Un mismo harness puede conectarse a distintos LLMs por debajo — son \textbf{capas distintas} del mismo flujo.
     \end{frame}
 
     \begin{frame}{¿Qué es Python?}
@@ -95,7 +119,7 @@
         Verifica que tienes instalado:
         \begin{itemize}
             \item Python 3.11+
-            \item Una CLI agentic (Gemini CLI o Claude Code)
+            \item Una CLI agentic (Antigravity CLI o Claude Code)
         \end{itemize}
 
         \vspace{1em}
