@@ -28,7 +28,7 @@ documento no usa ningún carácter CJK.
 
 ## Archivos
 
-- `taller.tex` — el documento fuente completo (31 slides: bienvenida, los 5
+- `taller.tex` — el documento fuente completo (33 slides: bienvenida, los 5
   bloques de la agenda con sus divisores de sección, descansos y cierre)
 - `cuzbeamer.cls` — copia local de la clase Beamer del ponente (ver nota abajo)
 - `tikz-uml.sty` — dependencia de la clase
@@ -70,6 +70,32 @@ tratamiento (recoloreados a blanco).
   es un producto comercial (2026) sin logo de licencia libre disponible en
   ninguna de las fuentes anteriores; se usa en su lugar un ícono genérico
   de terminal (dibujado a mano, sin dueño) solo para no dejar la fila vacía.
+
+## Nota sobre los logos de entornos (`logo-*.png`, slide "¿Dónde corres todo esto?")
+
+- `logo-terminal.png`: reutiliza el mismo ícono genérico de terminal que
+  `logo-commandcode.png` (sin marca — representa "una terminal cualquiera").
+  Sin QR: no hay una única URL "oficial" para instalar una terminal
+  cualquiera (ya viene con el sistema operativo).
+- `logo-claude-app.png`: ícono de la app Claude (distinto del wordmark
+  `logo-claude.png` usado en la slide de LLMs), de
+  [Simple Icons](https://simpleicons.org/) (CC0).
+- `logo-vscode.png`: extraído del símbolo de
+  [`Visual Studio Code 1.35 icon.svg`](https://commons.wikimedia.org/wiki/File:Visual_Studio_Code_1.35_icon.svg)
+  en Wikimedia Commons — dominio público por simplicidad, marca registrada
+  de Microsoft (no está en Simple Icons).
+- `logo-gpt.png`, `logo-warp.png`, `logo-antigravity.png`: reutilizados de
+  las slides anteriores.
+
+URLs de descarga usadas en los QR de esta slide:
+
+| Entorno | URL |
+|---|---|
+| Warp | https://www.warp.dev/ |
+| VS Code | https://code.visualstudio.com/ |
+| Antigravity IDE | https://antigravity.google/download |
+| Claude (app) | https://claude.com/download |
+| ChatGPT (app) | https://openai.com/chatgpt/download/ |
 
 ## Nota sobre los códigos QR (`qr/qr-*.png`)
 

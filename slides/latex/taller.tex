@@ -94,6 +94,48 @@
         \footnotesize Un mismo harness puede conectarse a distintos LLMs por debajo — son \textbf{capas distintas} del mismo flujo.
     \end{frame}
 
+    \begin{frame}{¿Dónde corres todo esto?}
+        \footnotesize El mismo harness se puede usar desde distintos entornos
+        — es cuestión de comodidad, no cambia lo que hace. QR = descarga.
+
+        \vspace{0.5em}
+        \begin{center}
+        \begin{tabular}{ccc}
+            \begin{minipage}[t]{3.3cm}\centering
+                \includegraphics[height=0.4cm]{images/logo-terminal.png}\\[0.15em]
+                {\tiny\textbf{Terminal clásica}}\\[0.1em]
+                {\tiny (ya la tienes)}
+            \end{minipage} &
+            \begin{minipage}[t]{3.3cm}\centering
+                \href{https://www.warp.dev/}{\includegraphics[height=0.4cm]{images/logo-warp.png}}\\[0.15em]
+                {\tiny\textbf{Warp}}\\[0.1em]
+                \href{https://www.warp.dev/}{\includegraphics[width=1.2cm]{images/qr/qr-warp-home.png}}
+            \end{minipage} &
+            \begin{minipage}[t]{3.3cm}\centering
+                \href{https://code.visualstudio.com/}{\includegraphics[height=0.4cm]{images/logo-vscode.png}}\\[0.15em]
+                {\tiny\textbf{VS Code}}\\[0.1em]
+                \href{https://code.visualstudio.com/}{\includegraphics[width=1.2cm]{images/qr/qr-vscode.png}}
+            \end{minipage} \\
+            \noalign{\vspace{1em}}
+            \begin{minipage}[t]{3.3cm}\centering
+                \href{https://antigravity.google/download}{\includegraphics[height=0.4cm]{images/logo-antigravity.png}}\\[0.15em]
+                {\tiny\textbf{Antigravity}}\\[0.1em]
+                \href{https://antigravity.google/download}{\includegraphics[width=1.2cm]{images/qr/qr-antigravity-download.png}}
+            \end{minipage} &
+            \begin{minipage}[t]{3.3cm}\centering
+                \href{https://claude.com/download}{\includegraphics[height=0.4cm]{images/logo-claude-app.png}}\\[0.15em]
+                {\tiny\textbf{Claude} (app)}\\[0.1em]
+                \href{https://claude.com/download}{\includegraphics[width=1.2cm]{images/qr/qr-claude-app.png}}
+            \end{minipage} &
+            \begin{minipage}[t]{3.3cm}\centering
+                \href{https://openai.com/chatgpt/download/}{\includegraphics[height=0.4cm]{images/logo-gpt.png}}\\[0.15em]
+                {\tiny\textbf{ChatGPT} (app)}\\[0.1em]
+                \href{https://openai.com/chatgpt/download/}{\includegraphics[width=1.2cm]{images/qr/qr-chatgpt-app.png}}
+            \end{minipage} \\
+        \end{tabular}
+        \end{center}
+    \end{frame}
+
     \begin{frame}{¿Qué es Python?}
         \begin{itemize}
             \item Un lenguaje de programación muy usado para análisis de datos
@@ -113,6 +155,24 @@
             \item \textbf{Hojas de cálculo en la nube} — Google Sheets
             \item \textbf{Bases de datos} — SQL, servicios en la nube
         \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Tip: Google AI Plus gratis para estudiantes}
+        Si eres estudiante, Google ofrece \textbf{un año gratis de Google AI
+        Plus} (normalmente de paga) — más límite de uso de Gemini. Te puede
+        servir para el ejercicio de hoy y después del taller.
+
+        \vspace{0.6em}
+        \begin{center}
+        \href{https://one.google.com/ai-student}{\includegraphics[width=2.8cm]{images/qr/qr-ai-student.png}}
+        \\[0.3em]
+        \href{https://one.google.com/ai-student}{\texttt{one.google.com/ai-student}}
+        \end{center}
+
+        \vspace{0.4em}
+        \footnotesize Requiere verificar tu estatus de estudiante y una
+        tarjeta de pago (se renueva automático si no cancelas). Disponible
+        en México. Vigente hasta el 31 de diciembre de 2026.
     \end{frame}
 
     \begin{frame}{Antes de empezar}
@@ -286,6 +346,17 @@
             \item No compartas datos sensibles o confidenciales con herramientas de IA
             \item Documenta qué prompts usaste para poder reproducir tu trabajo
             \item La IA acelera el trabajo técnico, no reemplaza tu criterio
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Privacidad: cuidado con datos de investigación}
+        Como investigador, lo que subes a una IA puede incluir datos que no
+        son solo tuyos.
+        \begin{itemize}
+            \item Antes de subir un dataset, revisa si tiene datos personales identificables (nombres, correos, ubicaciones, folios)
+            \item Anonimiza o agrega los datos sensibles antes de compartirlos con cualquier IA
+            \item Revisa la política de privacidad de la herramienta — algunas usan tus conversaciones para entrenar modelos por defecto (busca la opción de desactivarlo)
+            \item Consulta las políticas de tu institución o comité de ética antes de usar datos de investigación con IA
         \end{itemize}
     \end{frame}
 
