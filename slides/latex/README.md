@@ -98,7 +98,7 @@ URLs de descarga usadas en los QR de esta slide:
 
 | Entorno | URL |
 |---|---|
-| Warp | https://www.warp.dev/ |
+| Warp | https://app.warp.dev/referral/NEXXN3 (link de referido del ponente) |
 | VS Code | https://code.visualstudio.com/ |
 | Antigravity IDE | https://antigravity.google/download |
 | Claude (app) | https://claude.com/download |
