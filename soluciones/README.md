@@ -16,6 +16,7 @@ No se comparte con los participantes al inicio del bloque — solo como red de s
 - `02-plotly-guiado/barras.py`, `lineas.py`, `mapa.py` — los tres pasos guiados
 - `03-practica-libre/ejemplo_crecimiento_1990_2020.py` — un ejemplo de referencia (el bloque es abierto por diseño, no hay "la" respuesta correcta)
 - `04-dash/app.py` — el dashboard con el slider de población mínima
+- `04-dash/app_tiempo_real.py` — bonus: clima de Colima en vivo (API de Open-Meteo, sin llave), se actualiza sola cada minuto con `dcc.Interval`. Requiere también `pip install requests` (ya viene con la mayoría de instalaciones de Python, pero por si acaso).
 
 Todos corren desde la raíz del repo (usan rutas relativas como `datos/poblacion_por_estado.csv`), con `pip install plotly dash pandas` (ver [`requisitos/python.md`](../requisitos/python.md)):
 
