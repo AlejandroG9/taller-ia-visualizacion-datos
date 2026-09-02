@@ -28,7 +28,7 @@ documento no usa ningún carácter CJK.
 
 ## Archivos
 
-- `taller.tex` — el documento fuente completo (39 slides: bienvenida, los 5
+- `taller.tex` — el documento fuente completo (40 slides: bienvenida, los 5
   bloques de la agenda con sus divisores de sección, descansos y cierre)
 - `cuzbeamer.cls` — copia local de la clase Beamer del ponente (ver nota abajo)
 - `tikz-uml.sty` — dependencia de la clase
@@ -141,6 +141,19 @@ del PDF (usa `\href`, vía `hyperref` — ya lo trae Beamer). URLs usadas:
 | OpenCode | https://opencode.ai/ |
 | Command Code | https://commandcode.ai/ |
 | Warp Agent CLI | https://www.warp.dev/agent-cli |
+
+## Nota sobre `qr-encuesta.png`
+
+QR de la slide "Encuesta rápida: ¿de dónde partimos?" — apunta a un
+Microsoft Forms armado por el ponente para medir el nivel de
+experiencia del grupo con IA generativa antes de empezar (el
+formulario en sí vive en Microsoft 365, no en este repo). No lleva el
+texto de la URL debajo, a diferencia de los demás QR del deck, porque
+el link de Forms es muy largo para mostrarlo legible:
+
+```
+https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=B7Nacny3Zk-RaDdrHH-ZkMdhiCJoFP9Gu5bY9mAdh7BUQ0tHTUpQSUExWUZLM1gyMEhHRDA0VDREVy4u
+```
 
 ## Nota sobre `cuzbeamer.cls`
 
