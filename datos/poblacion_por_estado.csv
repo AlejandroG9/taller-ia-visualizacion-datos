@@ -1,33 +1,33 @@
-estado,capital,lat,lon,poblacion_2020
-Aguascalientes,Aguascalientes,21.88,-102.29,1425607
-Baja California,Mexicali,32.63,-115.45,3769020
-Baja California Sur,La Paz,24.14,-110.31,798447
-Campeche,San Francisco de Campeche,19.83,-90.53,928363
-Chiapas,Tuxtla Gutiérrez,16.75,-93.12,5543828
-Chihuahua,Chihuahua,28.63,-106.07,3741869
-Ciudad de México,Ciudad de México,19.43,-99.13,9209944
-Coahuila,Saltillo,25.42,-101.0,3146771
-Colima,Colima,19.24,-103.72,731391
-Durango,Durango,24.02,-104.65,1832650
-Guanajuato,Guanajuato,21.02,-101.26,6166934
-Guerrero,Chilpancingo,17.55,-99.5,3540685
-Hidalgo,Pachuca,20.12,-98.73,3082841
-Jalisco,Guadalajara,20.68,-103.35,8348151
-Michoacán,Morelia,19.7,-101.19,4748846
-Morelos,Cuernavaca,18.92,-99.23,1971520
-México,Toluca,19.29,-99.65,16992418
-Nayarit,Tepic,21.51,-104.89,1235456
-Nuevo León,Monterrey,25.69,-100.32,5784442
-Oaxaca,Oaxaca de Juárez,17.06,-96.73,4132148
-Puebla,Puebla,19.04,-98.2,6583278
-Querétaro,Querétaro,20.59,-100.39,2368467
-Quintana Roo,Chetumal,18.5,-88.3,1857985
-San Luis Potosí,San Luis Potosí,22.16,-100.99,2822255
-Sinaloa,Culiacán,24.79,-107.39,3026943
-Sonora,Hermosillo,29.07,-110.96,2944840
-Tabasco,Villahermosa,17.99,-92.93,2402598
-Tamaulipas,Ciudad Victoria,23.74,-99.14,3527735
-Tlaxcala,Tlaxcala de Xicohténcatl,19.32,-98.24,1342977
-Veracruz,Xalapa,19.54,-96.91,8062579
-Yucatán,Mérida,20.97,-89.62,2320898
-Zacatecas,Zacatecas,22.77,-102.58,1622138
+estado,capital,lat,lon,poblacion_2010,poblacion_2020,crecimiento_2010_2020_pct,tasa_crecimiento_anual_2000_2010_pct,superficie_km2,densidad_hab_km2,pob_urbana_pct,pob_rural_pct,grado_escolaridad,pob_lengua_indigena_pct
+Aguascalientes,Aguascalientes,21.88,-102.29,1184996,1425607,20.3,2.2,5616,253.8,83.7,16.3,10.35,0.2
+Baja California,Mexicali,32.63,-115.45,3155070,3769020,19.5,2.3,71450,52.8,93.3,6.7,10.2,1.3
+Baja California Sur,La Paz,24.14,-110.31,637026,798447,25.3,4.0,73909,10.8,90.2,9.8,10.34,1.7
+Campeche,San Francisco de Campeche,19.83,-90.53,822441,928363,12.9,1.7,57507,16.1,74.4,25.6,9.63,9.9
+Chiapas,Tuxtla Gutiérrez,16.75,-93.12,4796580,5543828,15.6,2.0,73311,75.6,48.8,51.2,7.78,26.3
+Chihuahua,Chihuahua,28.63,-106.07,3406465,3741869,9.8,1.1,247455,15.1,86.8,13.2,10,3.0
+Ciudad de México,Ciudad de México,19.43,-99.13,8851080,9209944,4.1,0.3,1495,6160.5,99.3,0.7,11.48,1.4
+Coahuila,Saltillo,25.42,-101.0,2748391,3146771,14.5,1.8,151562,20.8,91.3,8.7,10.43,0.2
+Colima,Colima,19.24,-103.72,650555,731391,12.4,1.8,5627,130.0,89.6,10.4,10.05,0.7
+Durango,Durango,24.02,-104.65,1632934,1832650,12.2,1.2,123317,14.9,71.8,28.2,9.75,2.6
+Guanajuato,Guanajuato,21.02,-101.26,5486372,6166934,12.4,1.6,30608,201.5,71.9,28.1,9.04,0.2
+Guerrero,Chilpancingo,17.55,-99.5,3388768,3540685,4.5,0.9,63596,55.7,59.5,40.5,8.37,14.6
+Hidalgo,Pachuca,20.12,-98.73,2665018,3082841,15.7,1.7,20813,148.1,57.2,42.8,9.37,11.8
+Jalisco,Guadalajara,20.68,-103.35,7350682,8348151,13.6,1.5,80295,104.0,87.7,12.3,9.9,0.8
+Michoacán,Morelia,19.7,-101.19,4351037,4748846,9.1,0.9,58599,81.0,70.8,29.2,8.6,3.3
+Morelos,Cuernavaca,18.92,-99.23,1777227,1971520,10.9,1.3,4879,404.1,81.8,18.2,9.84,1.9
+México,Toluca,19.29,-99.65,15175862,16992418,12.0,1.4,22351,760.3,87.4,12.6,10.08,2.5
+Nayarit,Tepic,21.51,-104.89,1084979,1235456,13.9,1.6,27857,44.3,72.0,28.0,9.73,5.6
+Nuevo León,Monterrey,25.69,-100.32,4653458,5784442,24.3,1.9,64156,90.2,95.7,4.3,10.74,1.3
+Oaxaca,Oaxaca de Juárez,17.06,-96.73,3801962,4132148,8.7,1.0,93757,44.1,49.3,50.7,8.12,29.6
+Puebla,Puebla,19.04,-98.2,5779829,6583278,13.9,1.3,34306,191.9,73.4,26.6,9.16,9.4
+Querétaro,Querétaro,20.59,-100.39,1827937,2368467,29.6,2.6,11699,202.5,78.9,21.1,10.48,1.3
+Quintana Roo,Chetumal,18.5,-88.3,1325578,1857985,40.2,4.1,44705,41.6,90.0,10.0,10.24,11.0
+San Luis Potosí,San Luis Potosí,22.16,-100.99,2585518,2822255,9.2,1.1,61137,46.2,67.0,33.0,9.61,8.2
+Sinaloa,Culiacán,24.79,-107.39,2767761,3026943,9.4,0.9,58200,52.0,75.1,24.9,10.22,1.2
+Sonora,Hermosillo,29.07,-110.96,2662480,2944840,10.6,1.8,179355,16.4,87.2,12.8,10.4,2.1
+Tabasco,Villahermosa,17.99,-92.93,2238603,2402598,7.3,1.6,24731,97.1,58.5,41.5,9.69,3.8
+Tamaulipas,Ciudad Victoria,23.74,-99.14,3268554,3527735,7.9,1.7,79890,44.2,89.9,10.1,10.09,0.6
+Tlaxcala,Tlaxcala de Xicohténcatl,19.32,-98.24,1169936,1342977,14.8,1.9,4016,334.4,83.2,16.8,9.83,2.0
+Veracruz,Xalapa,19.54,-96.91,7643194,8062579,5.5,1.0,71826,112.3,61.5,38.5,8.75,8.2
+Yucatán,Mérida,20.97,-89.62,1955577,2320898,18.7,1.6,39524,58.7,85.8,14.2,9.59,22.6
+Zacatecas,Zacatecas,22.77,-102.58,1490668,1622138,8.8,0.9,75284,21.5,62.9,37.1,9.25,0.3
