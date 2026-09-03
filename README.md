@@ -21,7 +21,7 @@ Instala y verifica lo siguiente siguiendo las guías en [`requisitos/`](requisit
 - [`requisitos/`](requisitos/) — guías de instalación previas al taller
 - [`datos/`](datos/) — datasets abiertos usados en los ejercicios
 - [`ejercicios/`](ejercicios/) — un bloque por carpeta, con objetivo y prompts de ejemplo
-- [`soluciones/`](soluciones/) — scripts de referencia del instructor (respaldo en vivo)
+- [`soluciones/`](soluciones/) — scripts de referencia del instructor (respaldo en vivo), incluyendo material bonus avanzado para quien termine antes
 - [`prompts/`](prompts/) — cheat-sheet de prompts efectivos y buenas prácticas
 - [`slides/`](slides/) — material de apoyo de la presentación
 

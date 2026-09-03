@@ -32,3 +32,14 @@ Antes de dar por buena tu gráfica, revisa:
 - ¿Los ejes muestran lo que dicen mostrar (unidades, escala)?
 - ¿Los números coinciden con lo que esperarías del dataset?
 - ¿La IA usó el archivo real, o inventó valores de ejemplo?
+
+## Bonus: si terminas antes o quieres ir más allá
+
+En [`soluciones/03-practica-libre/`](../../soluciones/03-practica-libre/) hay
+ejemplos avanzados sobre estos mismos datasets — tipos de gráfica que no se
+cubren en el Bloque 2 (dispersión con regresión OLS, coordenadas paralelas,
+dispersión 3D) y versiones con más indicadores en el hover. No son "la"
+respuesta ni algo que debas replicar — son ideas de hasta dónde se puede
+llevar el mismo dataset con más tiempo y prompts más ambiciosos. Requieren
+`statsmodels` además de `plotly dash pandas` (`pip install -r requirements.txt`
+desde la raíz del repo).

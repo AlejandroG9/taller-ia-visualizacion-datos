@@ -44,3 +44,18 @@ mismo en Colima? ¿la gráfica agrega un punto nuevo cada minuto sin que tú
 recargues la página?
 
 Referencia: [`soluciones/04-dash/app_tiempo_real.py`](../../soluciones/04-dash/app_tiempo_real.py).
+
+## Bonus: dashboards avanzados
+
+Si te sobra tiempo, en [`soluciones/04-dash/`](../../soluciones/04-dash/) hay
+cuatro dashboards más elaborados que muestran hasta dónde se puede llevar lo
+mismo que acabas de construir, con más prompts y tiempo: selección cruzada
+entre varias gráficas vinculadas, filtrado por arrastre (brushing), y datos
+en vivo de otra API pública.
+
+- `app_estatal_avanzado.py` — el mismo dataset de 32 estados, con pestañas, 4 gráficas vinculadas y coordenadas paralelas filtrando una tabla (`python soluciones/04-dash/app_estatal_avanzado.py`, puerto 8052)
+- `app_municipios.py` — igual, pero sobre los 2,469 municipios de México (puerto 8055)
+- `app_clima_avanzado.py` — versión ampliada del clima de Colima en vivo, con historial de sesión y KPIs (puerto 8060)
+- `app_sismos.py` — monitor sísmico en vivo con la API pública de USGS, sin llave (puerto 8065)
+
+Requieren `requests`, `openpyxl` y `statsmodels` además de `plotly dash pandas` — instala todo con `pip install -r requirements.txt` desde la raíz del repo.

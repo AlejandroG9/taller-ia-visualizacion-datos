@@ -35,13 +35,21 @@ taller-env\Scripts\activate      # Windows
 
 ## Librerías del taller
 
-Con el entorno virtual activado:
+Con el entorno virtual activado, para los 4 bloques guiados basta con:
 
 ```
 pip install plotly dash pandas
 ```
 
+El material bonus avanzado de `soluciones/` (dashboards de clima/sismos en
+vivo, regresiones OLS, etc. — ver [`soluciones/README.md`](../soluciones/README.md))
+usa además `requests`, `openpyxl` y `statsmodels`. Para instalar todo de una vez:
+
+```
+pip install -r requirements.txt
+```
+
 ## Checklist antes del taller
 
 - [ ] `python --version` (o `python3 --version`) muestra 3.11 o superior
-- [ ] `pip install plotly dash pandas` termina sin errores
+- [ ] `pip install plotly dash pandas` (o `pip install -r requirements.txt` para incluir el material bonus) termina sin errores
